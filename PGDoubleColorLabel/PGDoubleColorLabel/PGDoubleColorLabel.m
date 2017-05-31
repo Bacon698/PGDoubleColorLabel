@@ -6,9 +6,9 @@
 //  Copyright © 2017年 ChenWei. All rights reserved.
 //
 
-#import "QLHJDoubleColorLabel.h"
+#import "PGDoubleColorLabel.h"
 
-@interface QLHJDoubleColorLabel (){
+@interface PGDoubleColorLabel (){
 
     NSString *_strA;
     NSString *_strB;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation QLHJDoubleColorLabel
+@implementation PGDoubleColorLabel
 
 -(instancetype)initWithStr:(NSString *)strA Color:(UIColor *)colorA Str:(NSString *)strB Color:(UIColor *)colorB font:(UIFont *)font{
     self = [super init];
@@ -30,7 +30,7 @@
     _colorB = colorB;
     
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:[strA stringByAppendingString:strB]];
-    [string addAttribute:NSForegroundColorAttributeName value:colorA range:NSMakeRange(0, strA.length-1)];
+    [string addAttribute:NSForegroundColorAttributeName value:colorA range:NSMakeRange(0, strA.length)];
     [string addAttribute:NSForegroundColorAttributeName value:colorB range:NSMakeRange(strA.length, strB.length)];
     self.attributedText = string;
     
@@ -38,26 +38,27 @@
     
 }
 
--(instancetype)initWithTitle:(NSString *)title Font:(UIFont *)font{
-    self = [super init];
-    self.font = font;
-    _strA = title;
-    _strB = kPriceDufaultText;
-    _colorA = [AppSkin colorBlackOfFirst];
-    _colorB = [AppSkin colorBlackOfFirst];
+-(void)setStrA:(NSString *)strA ColorA:(UIColor *)colorA StrB:(NSString *)strB ColorB:(UIColor *)colorB font:(UIFont *)font{
+    if (font) {
+        self.font = font;
+    }
+    _strA = strA;
+    _strB = strB;
+    _colorA = colorA;
+    _colorB = colorB;
     
-    self.text = [title stringByAppendingString:kPriceDufaultText];
-    self.textColor = [AppSkin colorBlackOfFirst];
+    NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:[strA stringByAppendingString:strB]];
+    [string addAttribute:NSForegroundColorAttributeName value:colorA range:NSMakeRange(0, strA.length)];
+    [string addAttribute:NSForegroundColorAttributeName value:colorB range:NSMakeRange(strA.length, strB.length)];
+    self.attributedText = string;
     
-    return self;
-
 }
 
 -(void)setColorB:(UIColor *)colorB{
     _colorB = colorB;
     
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:[_strA stringByAppendingString:_strB]];
-    [string addAttribute:NSForegroundColorAttributeName value:_colorA range:NSMakeRange(0, _strA.length-1)];
+    [string addAttribute:NSForegroundColorAttributeName value:_colorA range:NSMakeRange(0, _strA.length)];
     [string addAttribute:NSForegroundColorAttributeName value:colorB range:NSMakeRange(_strA.length, _strB.length)];
     self.attributedText = string;
     
@@ -67,7 +68,7 @@
     _strB = strB;
     
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:[_strA stringByAppendingString:strB]];
-    [string addAttribute:NSForegroundColorAttributeName value:_colorA range:NSMakeRange(0, _strA.length-1)];
+    [string addAttribute:NSForegroundColorAttributeName value:_colorA range:NSMakeRange(0, _strA.length)];
     [string addAttribute:NSForegroundColorAttributeName value:_colorB range:NSMakeRange(_strA.length, strB.length)];
     self.attributedText = string;
 }
@@ -77,7 +78,7 @@
     _strB = strB;
     
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc]initWithString:[_strA stringByAppendingString:strB]];
-    [string addAttribute:NSForegroundColorAttributeName value:_colorA range:NSMakeRange(0, _strA.length-1)];
+    [string addAttribute:NSForegroundColorAttributeName value:_colorA range:NSMakeRange(0, _strA.length)];
     [string addAttribute:NSForegroundColorAttributeName value:colorB range:NSMakeRange(_strA.length, strB.length)];
     self.attributedText = string;
 }

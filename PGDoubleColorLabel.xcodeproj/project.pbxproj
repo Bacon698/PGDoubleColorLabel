@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F227C9191ECC61B500D6ADDA /* QLHJDoubleColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F227C9181ECC61B500D6ADDA /* QLHJDoubleColorLabel.m */; };
+		F227C9191ECC61B500D6ADDA /* PGDoubleColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F227C9181ECC61B500D6ADDA /* PGDoubleColorLabel.m */; };
 		F227C9371ECC61E600D6ADDA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F227C91B1ECC61E600D6ADDA /* LICENSE */; };
 		F227C9381ECC61E600D6ADDA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F227C91E1ECC61E600D6ADDA /* MASCompositeConstraint.m */; };
 		F227C9391ECC61E600D6ADDA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F227C9211ECC61E600D6ADDA /* MASConstraint.m */; };
@@ -48,8 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F227C9171ECC61B500D6ADDA /* QLHJDoubleColorLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLHJDoubleColorLabel.h; sourceTree = "<group>"; };
-		F227C9181ECC61B500D6ADDA /* QLHJDoubleColorLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLHJDoubleColorLabel.m; sourceTree = "<group>"; };
+		F227C9171ECC61B500D6ADDA /* PGDoubleColorLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGDoubleColorLabel.h; sourceTree = "<group>"; };
+		F227C9181ECC61B500D6ADDA /* PGDoubleColorLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGDoubleColorLabel.m; sourceTree = "<group>"; };
 		F227C91B1ECC61E600D6ADDA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F227C91D1ECC61E600D6ADDA /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		F227C91E1ECC61E600D6ADDA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 		F227C9161ECC619D00D6ADDA /* PGDoubleColorLabel */ = {
 			isa = PBXGroup;
 			children = (
-				F227C9171ECC61B500D6ADDA /* QLHJDoubleColorLabel.h */,
-				F227C9181ECC61B500D6ADDA /* QLHJDoubleColorLabel.m */,
+				F227C9171ECC61B500D6ADDA /* PGDoubleColorLabel.h */,
+				F227C9181ECC61B500D6ADDA /* PGDoubleColorLabel.m */,
 			);
 			path = PGDoubleColorLabel;
 			sourceTree = "<group>";
@@ -382,7 +382,7 @@
 				F227C93D1ECC61E600D6ADDA /* MASViewConstraint.m in Sources */,
 				F227C93C1ECC61E600D6ADDA /* MASViewAttribute.m in Sources */,
 				F227C9401ECC61E600D6ADDA /* View+MASAdditions.m in Sources */,
-				F227C9191ECC61B500D6ADDA /* QLHJDoubleColorLabel.m in Sources */,
+				F227C9191ECC61B500D6ADDA /* PGDoubleColorLabel.m in Sources */,
 				F289BDB91ECC5EE400E1239E /* main.m in Sources */,
 				F227C9421ECC61E600D6ADDA /* README.md in Sources */,
 				F227C9381ECC61E600D6ADDA /* MASCompositeConstraint.m in Sources */,
